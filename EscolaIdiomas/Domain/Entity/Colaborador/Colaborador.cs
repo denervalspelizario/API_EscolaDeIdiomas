@@ -1,8 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using Domain.Enum;
 
-namespace Domain.Entity
+namespace Domain.Entity.Colaborador
 {
     public class Colaborador
     {
@@ -35,7 +34,7 @@ namespace Domain.Entity
         [Required(ErrorMessage = "O email do colaborador é obrigatório.")]
         [EmailAddress(ErrorMessage = "O endereço de e-mail não é válido.")]
         public string? Email { get; set; }
-        
+
         public DateTime Data_admissao { get; set; } = DateTime.Now.Date;
 
         [Required]
@@ -44,8 +43,7 @@ namespace Domain.Entity
         [Required(ErrorMessage = "O valor salarial do colaborador é obrigatório.")]
         public decimal? Salario { get; set; }
         public DepartamentoEnum Departamento { get; set; }
-        
-        
+
         public bool Status { get; set; } = true;
     }
 }
