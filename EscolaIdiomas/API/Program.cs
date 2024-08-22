@@ -3,6 +3,7 @@ using API;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServices();
+builder.AddDatabase();
 
 var app = builder.Build();
 
