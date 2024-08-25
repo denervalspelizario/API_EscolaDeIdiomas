@@ -30,7 +30,6 @@
   <ItemGroup>
     <Folder Include="Dtos\Colaborador\" />
     <Folder Include="Validator\" />
-    <Folder Include="Response\" />
   </ItemGroup>
 
 </Project>
