@@ -6,7 +6,12 @@ namespace API.Controllers
     [ApiController]
     public class ColaboradorController : ControllerBase
     {
-        
+        [HttpPost]
+        [Route("adicionarColaborador/")]
+        public async Task<ActionResult> AdicaoColaborador()
+        {
+            return Ok();
+        }
 
     }
 }

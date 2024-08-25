@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServices();
 builder.AddDatabase();
+builder.AddInjections();
 
 var app = builder.Build();
 
